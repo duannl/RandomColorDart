@@ -5,7 +5,7 @@ class Options {
   final dynamic colorType;
   final Luminosity luminosity;
   final Format format;
-  final double alpha;
+  final double? alpha;
   final int count;
 
   Options({

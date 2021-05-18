@@ -2,15 +2,13 @@ class Range {
   int lower;
   int upper;
 
-  Range({this.lower, this.upper});
+  Range({required this.lower, required this.upper});
   int get index {
     switch (index) {
       case 0:
         return lower;
-        break;
       case 1:
         return upper;
-        break;
       default:
     }
     return 0;
@@ -28,7 +26,7 @@ class Range {
     }
   }
 
-  factory Range.toRange(List<int> range) {
+  static Range? toRange(List<int>? range) {
     if (range == null) return null;
     return Range(
       lower: range[0],
